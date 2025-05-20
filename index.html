@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="flex flex-col items-center mt-15">
+    <h1 class="text-3xl font-bold underline">Buscador de peliculas</h1>
+
+    <div class="flex flex-col m-20">
+      <form id="form">
+        <input
+          id="searchInput"
+          placeholder="Busca una pelicula.."
+          title="input"
+          type="text"
+          class="border-2 border-black p-2 text-lg focus:outline-none focus:border-blue-500 rounded w-full mb-4"
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div id="results" class="flex gap-[20px] flex-wrap justify-center">
+      <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white gap-3">
+        <img
+          class="w-full h-80 object-cover"
+          src="https://image.tmdb.org/t/p/w500/POSTER_PATH.jpg"
+          alt="Nombre de la película"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Título de la Película</div>
+          <p class="text-gray-700 text-base mb-2">Año: 2025</p>
+          <p class="text-gray-700 text-sm">
+            Esta es una breve descripción de la película. Aquí puedes ver un
+            resumen del argumento o sinopsis.
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
